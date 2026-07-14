@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    
+    min-height: 100vh;
+}
+
+.sidebarToggle {
+    padding: 20px;
+    color: white;
+    background-color: #1e293b;
+}
+
+.sidebar {
+    width: 100px;
+    padding: 12px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #334155;
+    border: none;
+    border-radius: 8px;
+}
+
+.sidebar:hover {
+    background-color: #475569;
+
+}
+
+.sidebarMenu {
+    margin-top: 20px;
+    background-color: #1e2935;
+}
+
+.tasks {
+    padding: 32px;
+}
+
+.tasksHeader {
+    margin-bottom: 24px;
+}
+
+.tasksHeader h1 {
+    color: #1e293b;
+    font-size: 2rem;
+}
+
+.tasksList {
+    min-height: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0/10%);
+}
+
+
+
+.sidebar{
+    display: grid;
+    gap: 150px;
+}
+.createTaskButton, .createCategoryButton{
+  width: 100%;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #3b82f6;
+  border: noe;
+  border-radius: 8px;
+}
+
+.createTaskButton:hover, .createCategoryButton:hover{
+        background-color: #2563eb;
+}
+.categories {
+    margin-top: 30px;
+}
+
+.categories h2 {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.categoryList {
+    list-style: none;
+}
+
+.categoryButton {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+}
+
+.categoryButton:hover,
+.categorybutton-active {
+    background-color: #334155;
+}
